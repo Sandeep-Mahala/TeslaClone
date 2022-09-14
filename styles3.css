@@ -1,0 +1,203 @@
+body,html{
+  height: 100%;
+  
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+  bottom: 0;
+  background-image: url('Tesla-car-white-.jpg');
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size: cover;
+  
+}
+
+.container{
+  min-height: 100%;
+  width:100%;
+  /*background-image: url('Tesla-car.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;*/
+  
+}
+
+.topnav{
+  display: flex;
+  justify-content: space-evenly;
+  margin:20px 10px;
+  
+}
+
+
+.myLinks a{
+  
+  padding: 8px;
+  margin:0 5px;
+  text-decoration: none;
+  color: azure;
+  font-size: 1.3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.myLinks a{
+  
+  padding: 8px;
+  margin:0 5px;
+  text-decoration: none;
+  color: azure;
+  font-size: 1.3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width:970px){
+  .myLinks a{
+    padding: 6px;
+    font-size: 0.98rem;
+  }
+  .myLinks a{
+    padding: 6px;
+    font-size: 0.98rem;
+  }
+}
+.icon{
+  display: none;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  vertical-align: center;
+  margin-right: 20px;
+}
+.activelogo{
+  width:20px;
+  height: 20px;
+}
+@media (max-width:830px){
+  .myLinks{
+    display: none;
+    
+  }
+  
+  .icon{
+    display: flex;
+    justify-content:space-between;
+    
+  }
+  .activelogo{
+    flex: 1;
+    width: 15px;
+    height: 15px;
+  }
+  
+  
+  
+}
+aside{
+  position: fixed;
+  width: 250px;
+  right:-320px;
+  top: 0;
+  padding: 80px 20px;
+  background-color: aliceblue;
+  height: 100vh;
+  z-index:4;
+  
+}
+aside.active{
+  right: 0;
+}
+
+aside a{
+  display: block;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 15px 0;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(169, 166, 166);
+}
+aside button.close{
+  position: absolute;
+  font-size: 30px;
+  font-weight: 400;
+  border: 0;
+  background-color: transparent;
+  top: 9px;
+  right:9px;
+  padding: 10px;
+}
+.backdrop{
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  background-color: rgba(0, 0,0 ,0.4);
+  backdrop-filter:blur(5px);
+}
+.backdrop.active{
+  display: block;
+}
+
+
+/*--------------*/
+
+.headlineWrapper{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 60%;
+  margin-top:50px
+}
+.headlineContent h1{
+  margin:18px;
+  font-size:80px;
+  color: #464646;
+}
+@media (max-width:970px){
+.headlineContent h1{
+  font-size: 70px;
+}
+}
+
+.headlineContent p{
+  margin:5px;
+  font-size:30px;
+  color: #464646;
+}
+footer{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  
+  margin: 30px;
+}
+.footer-main{
+  display: flex;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.btn{
+  padding: 10px;
+  border-radius: 45px;
+  font-size: 15px;
+  width:400px;
+}
+@media (max-width:400px){
+.btn{
+  width: 320px;
+}
+}
+#black{
+  background-color: rgb(41, 40, 40);
+  border: 1px solid white;
+  color: white;
+  
+}
+
+
+
